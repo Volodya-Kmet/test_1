@@ -1,0 +1,25 @@
+include mixins/aboutUsMixin
+section.section#aboutUs
+    .container
+        .row
+            .col-md-12
+                h2.about_title #[span About] us
+        .row
+            .col-md-6.col-sm-6
+                .container-fluid
+                    .row
+                        p.undet_title.
+                            Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism
+                            Nullam at scelerisque tellus mattis volutpat rhoncus,
+                    .row
+                        p.about_content Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit quam.
+                    .row
+                        - var skills = [['Photoshop','79%'], ['HTML/CSS', '90%'], ['JavaScript', '69%'], ['WordPress', '92%']];
+                        .skills_wrapper
+                            for arr in skills
+                                +skill(arr)
+            .col-lg-4.col-lg-offset-2.col-md-5.col-md-offset-1.col-sm-6
+                .container-fluid
+                    .row
+                        .col-md-12
+                            img(src="image/aboutUs.jpg" alt="Phone").about_img

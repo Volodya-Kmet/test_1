@@ -1,0 +1,13 @@
+mixin productsBlock (cl, tit, txt)
+    .product_container
+        .product_img
+            i(class=cl)
+        .product_content
+            h3.container_title= tit
+            p.container_txt= txt
+        .product_hover
+            h3.hover_title see more
+            .hover_icon
+                i.icon-link
+            .hover_icon
+                i.icon-zoom-in

@@ -1,0 +1,79 @@
+.header {
+  background-image: url(../image/Baner_BG.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .slider_wrapper {
+    width: 98.5vw;
+    padding-top: 339px;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 991px) {
+      padding-top: 280px;
+    }
+    @media screen and (max-width: 749px) {
+      padding-top: 200px;
+    }
+    .sliders_container {
+      width: 300vw;
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+      .slide_block {
+        width: 100vw;
+        position: relative;
+        left: 0;
+        .slider_text {
+          color: rgb(255, 255, 255);
+          text-align: center;
+          padding-top: 12px;
+          padding-bottom: 281px;
+          @media screen and (max-width: 749px) {
+            padding-bottom: 150px;
+          }
+          @media screen and (max-width: 500px) {
+            letter-spacing: 0.5px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+  .arrows_container{
+    position: absolute;
+    top: 435px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.8%;
+    .arrow_bg {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255,255,255, 0.2);
+      padding: 20px 0 0 20px;
+      cursor: pointer;
+      .icon-right-open {
+        color: #fff;
+      }
+    }
+    .arrow_left {
+      transform: rotate(180deg);
+    }
+    @media screen and (max-width: 749px) {
+      top: 250px;
+    }
+  }
+  .dots_container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 43px;
+    .dot {
+      margin: 0 4px;
+      width: 7px;
+      height: 7px;
+      border-radius:50%;
+      background-color: #b7b7b7;
+      cursor: pointer;
+    }
+  }
+}

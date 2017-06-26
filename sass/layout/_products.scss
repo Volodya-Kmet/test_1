@@ -1,0 +1,94 @@
+.products_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  .product_container {
+    border: 1px solid #ebebeb;
+    width: 200px;
+    .product_img {
+      padding: 20px 55px 15px;
+      i {
+        font-size: 60px;
+        color: #503392;
+      }
+      @media screen and (max-width: 1200px) {
+        padding: 20px 50px 15px;
+      }
+      @media screen and (max-width: 991px) {
+        padding: 20px 45px 15px;
+      }
+      @media screen and (max-width: 749px) {
+        padding: 20px 55px 15px;
+      }
+    }
+    .container_title{
+      padding: 20px 0 10px;
+    }
+    .container_txt {
+      font-size: 14px;
+      color: rgb(55, 55, 55);
+      line-height: 1.429;
+      letter-spacing: 0.6px;
+      text-align: center;
+      padding: 12px 17px 20px;
+    }
+    .product_hover {
+      background-color: #503392;
+      text-align: center;
+      padding-bottom: 30px;
+      display: none;
+      .hover_title{
+        padding: 30px 0;
+        text-align: center;
+        color: #ffffff;
+      }
+      .hover_icon{
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        height: 34px;
+        width: 34px;
+        background-color: #503392;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 5px;
+        display: inline-block;
+        margin: 4px 9px;
+        transition-duration: 0.2s;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      width: 180px;
+    }
+    @media screen and (max-width: 991px) {
+      width: 175px;
+    }
+    @media screen and (max-width: 749px) {
+      width: 200px;
+      margin: 0 30px 10px;
+    }
+    @media screen and (max-width: 570px) {
+      width: 200px;
+      margin: 0 0 10px;
+    }
+  }
+  .product_container:last-child{
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  //.......effects on hover
+  .product_container:hover .product_hover {
+    display: block;
+    .hover_icon:hover{
+      color: #503392;
+      background-color: #ffffff;
+    }
+  }
+  .product_container:hover .product_content {
+    display: none;
+  }
+  @media screen and (max-width: 749px) {
+    justify-content: space-around;
+  }
+}

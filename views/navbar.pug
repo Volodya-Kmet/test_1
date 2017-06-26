@@ -1,0 +1,21 @@
+include mixins/navbarMixin
+nav.nav
+    .container
+        .row
+            .col-md-2.col-sm-4.col-xs-5.nav_logo #[span UP]QODE
+            .col-md-5.col-md-offset-3.col-sm-4.col-xs-2.static
+                .nav_menu
+                    a(href="#home").nav_item.active Home
+                    div.nav_item
+                        a(href="#products").nav_item Products
+                        ul.menu_wrapper
+                            +navbar('Name Surname')
+                            +navbar('Nelson Noa Chris')
+                            +navbar('Name Surname')
+                            +navbar('Nelson Noa')
+                    a(href="#aboutUs").nav_item About
+                    a(href="#contacts").nav_item Contact
+            .col-md-2.col-sm-4.col-xs-5.nav_search
+                input(type='search').search_input
+                i(class="icon-search")
+    i(class="icon-menu")

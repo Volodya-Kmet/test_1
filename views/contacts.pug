@@ -1,0 +1,41 @@
+section.section#contacts
+    .container
+        .row
+            .col-md-4.col-md-offset-4
+                h2.contacts_title get in #[span touch]
+        .row
+            .col-md-8.col-md-offset-2
+                p.undet_title.
+                    Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.
+                    Nullam at scelerisque tellus mattis volutpat rhoncus,
+    .contacts__bg
+        #myMap
+        .contacts_wrapper
+            .container
+                .row
+                    .col-md-10.col-md-offset-1.col-xs-12.flex
+                        form( method="#" name="form").contacts_form
+                            input(type="text" placeholder="Full Name" name="text" required).form_input.form_text
+                            .input_mail__container
+                                input(type="email" placeholder="E-mail Address" name="email" required).form_input.form_mail
+                                i.demo-icon.icon-down-dir
+                            textarea(placeholder="Message" name="textarea" required).form_input.form_textarea
+                            input(type="checkbox" id="check" name="checkbox" value="check").form_checkbox
+                            .label_checkbox
+                                label(for="check") I like your company
+                                .error_checkbox Please confirm
+                                    .arrow_error
+                                .div_checkbox.form_input
+                                     .checkbox_checker
+                            input(type="submit" value="Send").form_button
+                        aside.contacts_info
+                            .contacts_block.
+                                69/A, Some Street Name
+                                Your City, code 01234
+                                Country Name
+                            .contacts_block.
+                                +880 123 456 78 98
+                                +860 987 648 74 95
+                            .contacts_block.
+                                company@mail.com
+                                sales@mail.com

@@ -1,0 +1,20 @@
+include mixins/productsMixin
+section.section#products
+    .container
+        .row
+            .col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3
+                h2.products_title Why #[span Choose Us]
+        .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                p.undet_title.
+                    Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.
+                    Nullam at scelerisque tellus mattis volutpat rhoncus,
+        .row
+            .col-xs-12
+                .products_wrapper
+                    +productsBlock('icon-heart-empty','Your title', 'Duis bibendum diam non erat facilaisis en ter tincidunt. Duis')
+                    +productsBlock('icon-commenting-o','Your title', 'Duis bibendum diam non erat facilaisis en ter tincidunt. Duis')
+                    +productsBlock('icon-laptop','Your title', 'Duis bibendum diam non erat facilaisis en ter tincidunt. Duis')
+                    +productsBlock('icon-star-empty','Your title', 'Duis bibendum diam non erat facilaisis en ter tincidunt. Duis')
+                    +productsBlock('icon-flag-empty','Your title', 'Duis bibendum diam non erat facilaisis en ter tincidunt. Duis')
+

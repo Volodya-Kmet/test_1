@@ -1,0 +1,68 @@
+//=============NAV BAR
+//........drop menu style
+@mixin drop_menu() {
+  .menu_item {
+    position: relative;
+    .submenu_item {
+      position: absolute;
+      width: 100%;
+      left: 100%;
+      top: 14px;
+      opacity: 1;
+      display: none;
+      @media screen and (max-width: 1024px) {
+        position: static;
+      }
+    }
+  }
+  .menu_link {
+    @media screen and (max-width: 1024px) {
+      daisplay: block;
+    }
+  }
+  .menu_item, .submenu_list {
+    list-style: none;
+    padding: 23px 0 0 10px;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+    color: rgb(253, 253, 253);
+    line-height: 0.8;
+    display: flex;
+    background-color: rgba(44, 29, 65, 0.65);
+    a {
+      color: rgb(253, 253, 253);
+      text-decoration: none;
+      font-style: normal;
+      padding-top: 2px;
+    }
+    @media screen and (max-width: 1024px) {
+      background-color: inherit;
+      padding: 10px 0;
+      display: block;
+    }
+  }
+  .menu_item:first-child, .submenu_list:first-child {
+    border-top: 2px solid #fff200;
+  }
+  .menu_item:last-child, .submenu_list:last-child {
+    padding-bottom: 29px;
+  }
+  //....drop menu effects
+  .menu_item:hover, .submenu_list:hover {
+    color: #fff200;
+  }
+  .menu_item:hover .menu_link{
+    color: #fff200;
+  }
+  .submenu_list:hover .submenu_link{
+    color: #fff200;
+  }
+  .menu_item:hover .submenu_item {
+    opacity: 1;
+    display: block;
+  }
+  .menu_item:hover .submenu_list {
+    opacity: 1;
+  }
+}

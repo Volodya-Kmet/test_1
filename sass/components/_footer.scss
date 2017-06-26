@@ -1,0 +1,63 @@
+.footer {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 61px;
+  background-color: #1a1a1a;
+  padding: 5px 1.8%;
+  display: flex;
+  justify-content: space-between;
+  .footer_text {
+    font-size: 16px;
+    color: rgb(122, 122, 122);
+    line-height: 2.625;
+    letter-spacing: 0.4px;
+    word-spacing: 0.8px;
+    @media screen and (max-width: 500px) {
+      font-size: 10px;
+    }
+  }
+  //.................icons style
+  .icons_container {
+    width: 161px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    .icon-facebook {
+      color: #6782b8;
+      font-size: 22px;
+      position: relative;
+      top: 5px;
+    }
+    .icon-gplus {
+      color: #904739;
+      font-size: 16px;
+      position: relative;
+      top: 3px;
+      left: -5px;
+    }
+    .icon-twitter {
+      color: #71d6fa;
+      font-size: 20px;
+      position: relative;
+      top: 4px;
+      left: -5px;
+    }
+    .icon-dribbble::before {
+      background-color: #e9779d;
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+      height: 22px;
+      width: 21px;
+    }
+    .icon-dribbble {
+      color: #1a1a1a;
+      font-size: 24px;
+      position: relative;
+      top: 7px;
+      left: -6px;
+    }
+  }
+}

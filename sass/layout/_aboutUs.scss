@@ -1,0 +1,82 @@
+.about_title {
+    text-align: left;
+}
+
+#aboutUs {
+    padding-bottom: 49px;
+    .undet_title {
+        text-align: left;
+        padding-bottom: 49px;
+        letter-spacing: 0.56px;
+    }
+    @media screen and (max-width: 500px) {
+        padding-bottom: 20px;
+    }
+}
+
+.about_content {
+    font-size: 14px;
+    color: rgb(55, 55, 55);
+    line-height: 1.715;
+    letter-spacing: 0.58px;
+    padding-bottom: 15px;
+    @media screen and (max-width: 991px) {
+        padding-bottom: 0;
+    }
+    @media screen and (max-width: 991px) {
+        line-height: 1.5;
+        font-size: 12px;
+    }
+}
+
+.about_img {
+    padding-top: 34px;
+    @media screen and (max-width: 991px) {
+        width: 300px;
+        height: 550px;
+    }
+    @media screen and (max-width: 770px) {
+        display: none;
+    }
+}
+
+.skills_wrapper {
+    width: 100%;
+    padding-right: 9px;
+    .skill_title {
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 13px;
+            font-family: LatoBold, serif;
+            color: rgb(68, 68, 68);
+            font-weight: bold;
+            line-height: 2.15;
+            text-transform: uppercase;
+            padding-top: 34px;
+            @media screen and (max-width: 991px) {
+                padding-top: 24px;
+                line-height: 1.5;
+            }
+        }
+        p:last-child {
+            display: none;
+        }
+    }
+    .skill_diagram__container {
+        width: 100%;
+        padding: 2px;
+        border: 1px solid #dddddd;
+        .skill_diagram {
+            background-color: #009dda;
+            height: 3px;
+            width: 0;
+        }
+    }
+    @media screen and (max-width: 770px) {
+        background-image: url(../image/aboutUs.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+}

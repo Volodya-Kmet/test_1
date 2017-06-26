@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .wrapper{
+    overflow: hidden;
+  }
+  P {
+    font-family: LatoRegular, serif;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.7px;
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  H1 {
+    font-size: 65px;
+    font-family: LatoBold, serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-align: center;
+    span {
+      color: #fff200;
+      letter-spacing: 2.6px;
+      padding-left: 10px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 35px;
+      letter-spacing: 1px;
+    }
+  }
+
+  H2 {
+    font-size: 35px;
+    font-family: LatoBold, serif;
+    color: rgb(35, 35, 35);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.686;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+    padding-top: 94px;
+    span {
+      color: #009dda;
+    }
+    @media screen and (max-width: 500px) {
+      padding-top: 50px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 25px;
+      letter-spacing: 0.8px;
+    }
+  }
+  .undet_title {
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    line-height: 1.714;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 82px;
+    margin: 0;
+    @media screen and (max-width: 749px) {
+      padding-bottom: 20px;
+    }
+  }
+  H3 {
+    font-family: LatoHeavy, serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(35, 35, 35);
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin: 0;
+  }
+  .flex {
+    display: flex;
+  }
+}
