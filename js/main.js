@@ -97,10 +97,20 @@ $(function () {
             $('.nav_menu')
                 .css({
                     'display': 'block',
-                    'height': '100vw'
+                    'height': '100vh'
                 })
         } else {
             $('.nav_menu')
+                .css({
+                    'display': '',
+                    'height': ''
+                })
+        }
+    })
+    
+    $(window).resize(function () {
+        if($('body').width() >1024){
+        $('.nav_menu')
                 .css({
                     'display': '',
                     'height': ''
